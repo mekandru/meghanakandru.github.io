@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{page.title}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-  <body>
+<body>
     <header>
-        <h1>{{ site.title }}</h1>
+        <h1><a href="/">{{ site.title }}</a></h1>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/writing-samples">Writing Samples</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/writing-samples.html">Writing Samples</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         {{ content }}
     </main>
+
     <footer>
         <p>&copy; 2025 Meghana Kandru. All Rights Reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
