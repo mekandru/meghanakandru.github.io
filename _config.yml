@@ -1,3 +1,5 @@
 title: "Meghana Kandru - Technical Writer Portfolio"
 description: "A showcase of my technical writing work and projects"
-theme: minima 
+theme: minima  # You can change this theme later
+baseurl: ""
+url: "https://meghanakandru.github.io"
