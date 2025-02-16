@@ -90,6 +90,6 @@ theme: custom
 </section>
 
 <footer>
-  <p>&copy; 2025 Meghana Kandru. All Rights Reserved.</p>
+  <p>&copy; Meghana Kandru. All Rights Reserved.</p>
   <!-- Footer section for copyright information -->
 </footer>
