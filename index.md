@@ -24,6 +24,7 @@ theme: custom
     </ul>
   </nav>
   <!-- Navigation menu for easy site navigation -->
+<link rel="stylesheet" href="/assets/css/style.css">
 </header>
 
 <section id="about">
