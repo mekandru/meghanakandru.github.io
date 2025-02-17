@@ -1,6 +1,8 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
 body {
-    font-family: 'Poppins', 'Nunito', Arial, sans-serif; /* Sets the base font for the site */
+    font-family: Arial, sans-serif; /* Sets the base font for the site */
     margin: 0;
     padding: 0;
     background-color: #ffffff; /* White background for a clean look */
