@@ -1,98 +1,191 @@
-/* General Styles */
-/*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;500;700&display=swap');*/
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif; /* Sets the base font for the site */
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background for a clean look */
-    color: #333333; /* Dark gray text for readability */
 }
 
 /* Header Styles */
 header {
-    background-color: #4A90E2; /* Soft blue background */
-    color: #ffffff; /* White text color */
-    padding: 20px 0;
+    background-color: white;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
     margin: 0;
-    font-size: 2.5em;
-    font-weight: normal;
+    color: #222;
 }
 
-/* Navigation Menu Styles */
-nav ul {
-    list-style-type: none; /* Removes default list styling */
-    padding: 0;
-    margin: 20px 0 0 0;
+/* Navigation */
+nav {
     text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Horizontally aligns the list items */
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ffffff; /* White text color */
-    text-decoration: none; /* Removes underline from links */
-    font-size: 1.2em;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover for clarity */
+    color: #0077b6;
 }
 
-/* Main Content Styles */
-main {
-    padding: 40px 20px;
-    max-width: 900px;
-    margin: auto;
-    background-color: #f9f9f9; /* Light gray background for content area */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+/* Hero Section */
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
 }
 
-/* Section Styles */
-section {
-    margin-bottom: 40px;
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-section h2 {
-    color: #4A90E2; /* Matching the header's blue color */
-    border-bottom: 2px solid #4A90E2; /* Underline effect */
-    padding-bottom: 10px;
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
 }
 
-section p, section ul {
-    line-height: 1.6; /* Improves readability */
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background: #0077b6;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
-/* Footer Styles */
+.btn:hover {
+    background: #005f8a;
+}
+
+/* Portfolio Section */
+.portfolio {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 0 10px;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 15px 0;
-    background-color: #4A90E2; /* Consistent blue background */
-    color: #ffffff; /* White text color */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
+    .hero {
+        padding: 60px 20px;
     }
 
-    nav ul li {
-        display: block; /* Stacks menu items vertically on small screens */
-        margin: 10px 0;
+    .hero h2 {
+        font-size: 32px;
     }
 
-    main {
-        padding: 20px 10px;
+    .portfolio-items {
+        flex-direction: column;
+        align-items: center;
     }
 }
