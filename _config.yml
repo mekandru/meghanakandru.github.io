@@ -1,5 +1,23 @@
 title: "Meghana Kandru - Technical Writer Portfolio"
 description: "A showcase of my technical writing work and projects"
-theme: minima  # You can change this theme later
+
+# Theme selection (GitHub Pages supports 'minima', but you can change it)
+theme: minima  
+
+# Base URL - Keep it empty since your site is hosted at the root of GitHub Pages
 baseurl: ""
+
+# URL of the website
 url: "https://meghanakandru.github.io"
+
+# Enable Markdown support and set Jekyll settings
+markdown: kramdown
+permalink: pretty  # Generates cleaner URLs without .html extensions
+
+# Navigation links for easier control
+nav_links:
+  Home: "/"
+  Writing Samples: "/writing-samples/"
+  Projects: "/projects/"
+  About: "/about/"
+  Contact: "/contact/"
